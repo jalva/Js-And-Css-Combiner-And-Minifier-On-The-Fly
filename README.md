@@ -1,9 +1,9 @@
 # JsAndCssCombiner
-A javascript and css combiner and minifier that requires no modification to your html nor configuration of any bundles.
+A javascript and css combiner and minifier that requires no modification to your html nor configuration of any bundles. Has some additional features such as cdn host prepending to all images and output caching to the combined js and css.
 
 In order to apply compression and bundling to a page you need to:
 
-In MVC:
+<b>In MVC:</b>
 Use an attribute [Combine(...)] on any action method 
 and passing true/false for the desired options.
 
@@ -17,18 +17,16 @@ Combiner(bool applyOutputCaching, bool combineJs, bool combineCss, bool versionO
 
 Note: the 'prependCdnHostToImages' feature will be ignored if the 'imagesCdnHostToPrepend' web.config value is blank.
 
-In Webforms: 
+<b>In Webforms:</b> 
 Use the server control CombinerWebControl and set the desired options.
 
 Check out the sample MVC app and it's configuration file to see how to cnfigure this tool.
-/////////////////////////////
 
 This tool uses 
 -EntLib for logging errors (errors by default will be logged to errors.txt file, can be changed in logging.config), 
 -HtmlAgilityPack for parsing the Dom and 
 -Yui.Compressor for compressing the js and css.
 
-/////////////////////////////
 There is a combinerSettings.txt file that can be used to turn on/off the various features 'live'
 without having to mess with the web.config.
 
@@ -38,16 +36,13 @@ This version setting will also fingerprint the urls or the individual resources 
 other settings are turned off, as long as the 'VersionOnly' setting is set to true. This 'VersionOnly' setting
 is only applicable when the 'CombineJs' and 'CombineCss' are set to false, and is ignored otherwise (all resources will be versioned).
 
-////////////////////////////
 In the web.config's combinerSettings node there is an attribute 'imagesCdnHostToPrepend' 
 which can be used to specify a subdomain or cdn url that will be used to replace the
 image's root paths (this feature must be set to on in the attribute filter or web control).
 See the 'prependCdnHostToImages' attribute filter parameter or the 'PrependCdnHostToImages'
 property of the web control.
 
-/////////////////////////////
-
-Troubleshooting tips:
+<b>Troubleshooting tips:</b>
 
 - Do not use @import directives inside your css files since they will not work when the css is combined, since
 they must be at the top of any css in order to work. Or make sure they appear at the top of the first css on the page.
