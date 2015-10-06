@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05DF6941-0539-45CB-A149-A5E41F1ED6C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JsAndCssCombiner</RootNamespace>
+    <AssemblyName>JsAndCssCombiner</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EcmaScript.NET.modified, Version=0.1.1.0, Culture=neutral, PublicKeyToken=7d53ba4f537753a5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\EcmaScript.NET.modified.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.3.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\EntLib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\EntLib\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\EntLib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\EntLib\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Persephone.Processing.Pipeline, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\Persephone.Processing.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Yahoo.Yui.Compressor, Version=1.5.0.0, Culture=neutral, PublicKeyToken=f8b4b81ec75097e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\Yahoo.Yui.Compressor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheService\CacheService.cs" />
+    <Compile Include="CacheService\ICacheService.cs" />
+    <Compile Include="CombinedResourceHandler.cs" />
+    <Compile Include="CombinedResourceType.cs" />
+    <Compile Include="CombinerConfigSettings\CombinerSection.cs" />
+    <Compile Include="CombinerConstants.cs" />
+    <Compile Include="CombinerLiveSettings.cs" />
+    <Compile Include="CombinerServiceFactory.cs" />
+    <Compile Include="ImagePathsUtility.cs" />
+    <Compile Include="InterceptorFilterImplementation\CombinerAttribute.cs" />
+    <Compile Include="InterceptorFilterImplementation\CombinerFilterContext.cs" />
+    <Compile Include="InterceptorFilterImplementation\CombinerResponseStream.cs" />
+    <Compile Include="InterceptorFilterImplementation\CombinerWebControl.cs" />
+    <Compile Include="InterceptorFilterImplementation\Filters\BaseFilter.cs" />
+    <Compile Include="InterceptorFilterImplementation\Filters\CssCombinerFilter.cs" />
+    <Compile Include="InterceptorFilterImplementation\Filters\CssVersioningFilter.cs" />
+    <Compile Include="InterceptorFilterImplementation\Filters\IeConditionalCommentsFilter.cs" />
+    <Compile Include="InterceptorFilterImplementation\Filters\ImagePathsRewriteFilter.cs" />
+    <Compile Include="InterceptorFilterImplementation\Filters\JsCombinerFilter.cs" />
+    <Compile Include="InterceptorFilterImplementation\Filters\JsVersoningFilter.cs" />
+    <Compile Include="IResourceMinifier.cs" />
+    <Compile Include="LiveSettingsService\ILiveSettingsService.cs" />
+    <Compile Include="LiveSettingsService\LiveSettingsService.cs" />
+    <Compile Include="LoggingService\ILoggingService.cs" />
+    <Compile Include="LoggingService\LoggingService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceMinifier.cs" />
+    <Compile Include="ResponseFilterTemplate.cs" />
+    <Compile Include="CombinerServices\ICombinerService.cs" />
+    <Compile Include="CombinerServices\LongUrlCombinerService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dependencies\EcmaScript.NET.modified.dll" />
+    <Content Include="Dependencies\EntLib\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Dependencies\EntLib\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+    <Content Include="Dependencies\EntLib\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="Dependencies\EntLib\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="Dependencies\HtmlAgilityPack.dll" />
+    <Content Include="Dependencies\HtmlAgilityPack.pdb" />
+    <Content Include="Dependencies\HtmlAgilityPack.XML" />
+    <Content Include="Dependencies\Persephone.Processing.Pipeline.dll" />
+    <Content Include="Dependencies\Persephone.Processing.Pipeline.pdb" />
+    <Content Include="Dependencies\Yahoo.Yui.Compressor.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

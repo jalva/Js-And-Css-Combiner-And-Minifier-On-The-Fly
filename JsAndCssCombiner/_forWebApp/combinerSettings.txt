@@ -1,0 +1,10 @@
+﻿{
+	"CombineJs" : "true",
+	"MinifyJs" : "true",
+	"CombineCss" : "true",
+	"MinifyCss" : "true",
+	"VersionOnly" : "false",
+	"JsVersion" : "1",
+	"CssVersion" : "1",
+	"PrependCdnHostToImages" : "false"
+}
