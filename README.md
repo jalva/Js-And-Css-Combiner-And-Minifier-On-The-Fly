@@ -22,10 +22,10 @@ Use the server control CombinerWebControl and set the desired options.
 
 Check out the sample MVC app and it's configuration file to see how to cnfigure this tool.
 
-This tool uses 
--EntLib for logging errors (errors by default will be logged to errors.txt file, can be changed in logging.config), 
--HtmlAgilityPack for parsing the Dom and 
--Yui.Compressor for compressing the js and css.
+<b>This tool uses</b>
+- <b>EntLib</b> for logging errors (errors by default will be logged to errors.txt file, can be changed in logging.config), 
+- <b>HtmlAgilityPack</b> for parsing the Dom and 
+- <b>Yui.Compressor</b> for compressing the js and css.
 
 There is a combinerSettings.txt file that can be used to turn on/off the various features 'live'
 without having to mess with the web.config.
