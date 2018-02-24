@@ -4,17 +4,17 @@ A javascript and css combiner and minifier that requires no modification to your
 In order to apply compression and bundling to a page you need to:
 
 <b>In MVC:</b>
-Use an attribute [Combine(...)] on any action method passing true/false for the desired options.
+Use an attribute [Combine()] on any action method passing true/false for the desired options.
 
 There are three constructors that can be used for the mvc attribute:
 
-Combiner() => will turn all features on ( 'PrependCdnHostToImages' in the web.config must be set to some url
+Combiner(): will turn all features on*.
 
-Combiner(bool applyOutputCaching) => will turn all features on and you can control the 'applyOutputCaching' feature
+Combiner(bool applyOutputCaching): will turn all features on except the 'applyOutputCaching' feature.
 
-Combiner(bool applyOutputCaching, bool combineJs, bool combineCss, bool versionOnly, bool minifyJs, bool minifyCss, bool prependCdnHostToImages)
+Combiner(bool applyOutputCaching, bool combineJs, bool combineCss, bool versionOnly, bool minifyJs, bool minifyCss, bool prependCdnHostToImages): allows you to turn features on individually.
 
-Note: the 'prependCdnHostToImages' feature will be ignored if the 'imagesCdnHostToPrepend' web.config value is blank.
+*Note: the 'prependCdnHostToImages' feature will be ignored if the 'imagesCdnHostToPrepend' web.config value is blank.
 
 <b>In Webforms:</b> 
 Use the server control CombinerWebControl and set the desired options.
